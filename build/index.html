@@ -5,60 +5,115 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Описание проекта">
-    <title>ProjectName</title>
+    <title>Евгений Максутов — фронтенд-разработчик. Сайт-портфолио</title>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <div class="container"></div>
+      <header class="page-header">
+        <div class="container">
+          <div class="page-header__content">
+            <div class="author-name">
+              <p>Евгений Максутов</p>
+            </div>
+            <div class="author-contacts">
+              <ul>
+                <li>
+                  <a href="#">GitHub</a>
+                </li>
+                <li>
+                  <a href="#">Telegram</a>
+                </li>
+                <li>
+                  <a href="#">Codewars</a>
+                </li>
+              </ul>
+            </div>
+            <ul></ul>
+          </div>
+        </div>
       </header>
-      <main>
-        <section class="intro">
+      <main class="page-content">
+        <h1 class="visually-hidden">Евгений Максутов — фронтенд-разработчик. Сайт-портфолио</h1>
+        <section class="portfolio">
           <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+            <div class="portfolio__content">
+              <div class="portfolio__header">
+                <h2 class="visually-hidden">Мои работы</h2>
+                <p>
+                  Это мой сайт-портфолио.<br>
+                  Здесь собраны мои последние работы.
+                </p>
+              </div>
+              <div class="portfolio__body  projects">
+                <div class="projects__item  project  project--js">
+                  <span class="project__order" data-order="05"></span>
+                  <h3 class="project__title">Кекcобукинг</h3>
+                  <p class="project__description">Сервис размещения объявлений об аренде недвижимости в Токио. Пользователи делятся информацией о своем объекте недвижимости, размещают фотографии, указывают адрес, перемещая метку по карте города. Кроме этого, можно посмотреть на объявления, размещенные другими пользователями.</p>
+                  <div class="project__links">
+                    <a href="#">Сайт</a>
+                    <a href="#">GitHub</a>
+                  </div>
+                </div>
+                <div class="projects__item  project  project--css">
+                  <span class="project__order" data-order="04"></span>
+                  <h3 class="project__title">SUPERGYM</h3>
+                  <p class="project__description">Сайт самого большого фитнес-центра за Уралом.</p>
+                  <div class="project__links">
+                    <a href="#">Сайт</a>
+                    <a href="#">GitHub</a>
+                  </div>
+                </div>
+                <div class="projects__item  project  project--css">
+                  <span class="project__order" data-order="03"></span>
+                  <h3 class="project__title">Smart Device</h3>
+                  <p class="project__description">Сайт по производству и монтажу печатных плат, поставке электронных комплектующих, блоков и модулей.</p>
+                  <div class="project__links">
+                    <a href="#">Сайт</a>
+                    <a href="#">GitHub</a>
+                  </div>
+                </div>
+                <div class="projects__item  project  project--css">
+                  <span class="project__order" data-order="02"></span>
+                  <h3 class="project__title">Круизы в Антарктику</h3>
+                  <p class="project__description">Сайт по продаже экскурсионных туров к берегам Антарктики.</p>
+                  <div class="project__links">
+                    <a href="#">Сайт</a>
+                    <a href="#">GitHub</a>
+                  </div>
+                </div>
+                <div class="projects__item  project  project--html">
+                  <span class="project__order" data-order="01"></span>
+                  <h3 class="project__title">Кошачий питомник</h3>
+                  <p class="project__description">Сайт по первому питомнику мейн-кунов с расширенным спектром услуг.</p>
+                  <div class="project__links">
+                    <a href="#">Сайт</a>
+                    <a href="#">GitHub</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </main>
-      <footer>
-        <div class="container"></div>
+      <footer class="page-footer">
+        <div class="container">
+          <div class="page-footer__content">
+            <div class="contacts">
+              <h2 class="visually-hidden">Мои контакты</h2>
+              <div class="contacts__list">
+                <a href="mailto:i@kmartin.ru">i@kmartin.ru</a>
+                <a href="tel:+79295912777">+7 (929) 591-2-777</a>
+              </div>
+            </div>
+            <div class="copyright">
+              <p>Евгений Максутов, 2022</p>
+            </div>
+          </div>
+        </div>
       </footer>
     </div>
 
-    <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
 </html>
