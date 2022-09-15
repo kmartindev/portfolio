@@ -1,0 +1,165 @@
+.project {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 503px;
+  padding: 46px 27px 69px;
+  color: $color-blanc;
+
+  border: 1px solid $color-blanc;
+
+  &::before {
+    position: absolute;
+    bottom: 26px;
+
+    font-family: "PT Mono", "Courier New", monospace;
+    font-size: 16px;
+    color: inherit;
+  }
+}
+
+.project--js {
+  color: $color-tulip-tree;
+
+  border-color: $color-tulip-tree;
+
+  &::before {
+    content: "JavaScript";
+
+    color: $color-tulip-tree;
+  }
+}
+
+.project--css {
+  color: $color-polo-blue;
+
+  border-color: $color-polo-blue;
+
+  &::before {
+    content: "Отзывчивая верстка";
+
+    color: $color-polo-blue;
+  }
+}
+
+.project--html {
+  color: $color-japonica;
+
+  border-color: $color-japonica;
+
+  &::before {
+    content: "Адаптивная верстка";
+
+    color: $color-japonica;
+  }
+}
+
+.project__order {
+  display: block;
+  margin-bottom: 26px;
+
+  font-family: "PT Mono", "Courier New", monospace;
+  font-size: 36px;
+  color: inherit;
+
+  &::before {
+    content: attr(data-order) "";
+  }
+}
+
+.project__title {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-family: "PT Mono", "Courier New", monospace;
+  font-weight: normal;
+  font-size: 24px;
+  color: inherit;
+}
+
+.project__description {
+  margin: 0;
+
+  font-family: "PT Mono", "Courier New", monospace;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  color: inherit;
+}
+
+.project__links {
+  margin-top: auto;
+}
+
+.project__links a {
+  position: relative;
+  margin-right: 35px;
+
+  font-family: "PT Mono", "Courier New", monospace;
+  font-size: 24px;
+  line-height: 24px;
+  color: inherit;
+  text-decoration: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 1px;
+    right: 0;
+    left: 0;
+
+    border-bottom: 1px solid $color-blanc;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    right: -20px;
+    bottom: 2px;
+    height: 20px;
+
+    border-right: 2px solid $color-blanc;
+
+    pointer-events: none;
+  }
+
+  &:last-child {
+    margin-right: 0;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.project--js .project__links a {
+  &::before {
+    border-bottom: 1px solid $color-tulip-tree;
+  }
+
+  &::after {
+    border-right: 2px solid $color-tulip-tree;
+  }
+}
+
+.project--css .project__links a {
+  &::before {
+    border-bottom: 1px solid $color-polo-blue;
+  }
+
+  &::after {
+    border-right: 2px solid $color-polo-blue;
+  }
+}
+
+.project--html .project__links a {
+  &::before {
+    border-bottom: 1px solid $color-japonica;
+  }
+
+  &::after {
+    border-right: 2px solid $color-japonica;
+  }
+}

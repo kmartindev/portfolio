@@ -4,32 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Описание проекта">
     <title>Евгений Максутов — фронтенд-разработчик. Сайт-портфолио</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/PTMono-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   </head>
   <body>
     <div class="wrapper">
       <header class="page-header">
         <div class="container">
-          <div class="page-header__content">
-            <div class="author-name">
-              <p>Евгений Максутов</p>
+          <div class="page-header__content  author">
+            <div class="author__name">
+              <p>Евгений<br>Максутов</p>
             </div>
-            <div class="author-contacts">
+            <div class="author__contacts">
               <ul>
                 <li>
-                  <a href="#">GitHub</a>
+                  <a href="#">
+                    <svg width="74" height="72" aria-hidden="true" focusable="false">
+                      <use xlink:href="img/sprite_auto.svg#icon-github"></use>
+                    </svg>
+                    GitHub
+                  </a>
                 </li>
                 <li>
-                  <a href="#">Telegram</a>
+                  <a href="#">
+                    <svg width="72" height="72" aria-hidden="true" focusable="false">
+                      <use xlink:href="img/sprite_auto.svg#icon-telegram"></use>
+                    </svg>
+                    Telegram
+                  </a>
                 </li>
                 <li>
-                  <a href="#">Codewars</a>
+                  <a href="#">
+                    <svg width="73" height="72" aria-hidden="true" focusable="false">
+                      <use xlink:href="img/sprite_auto.svg#icon-codewars"></use>
+                    </svg>
+                    Codewars
+                  </a>
                 </li>
               </ul>
             </div>
-            <ul></ul>
           </div>
         </div>
       </header>
@@ -49,7 +63,7 @@
                 <div class="projects__item  project  project--js">
                   <span class="project__order" data-order="05"></span>
                   <h3 class="project__title">Кекcобукинг</h3>
-                  <p class="project__description">Сервис размещения объявлений об аренде недвижимости в Токио. Пользователи делятся информацией о своем объекте недвижимости, размещают фотографии, указывают адрес, перемещая метку по карте города. Кроме этого, можно посмотреть на объявления, размещенные другими пользователями.</p>
+                  <p class="project__description">Сервис размещения объявлений об&nbsp;аренде недвижимости в&nbsp;Токио. Пользователи делятся информацией о&nbsp;своем объекте недвижимости, размещают фотографии, указывают адрес, перемещая метку по&nbsp;карте города. Кроме этого, можно посмотреть на&nbsp;объявления, размещенные другими пользователями.</p>
                   <div class="project__links">
                     <a href="#">Сайт</a>
                     <a href="#">GitHub</a>
@@ -58,7 +72,7 @@
                 <div class="projects__item  project  project--css">
                   <span class="project__order" data-order="04"></span>
                   <h3 class="project__title">SUPERGYM</h3>
-                  <p class="project__description">Сайт самого большого фитнес-центра за Уралом.</p>
+                  <p class="project__description">Сайт самого большого фитнес&#8209;центра за&nbsp;Уралом.</p>
                   <div class="project__links">
                     <a href="#">Сайт</a>
                     <a href="#">GitHub</a>
@@ -67,7 +81,7 @@
                 <div class="projects__item  project  project--css">
                   <span class="project__order" data-order="03"></span>
                   <h3 class="project__title">Smart Device</h3>
-                  <p class="project__description">Сайт по производству и монтажу печатных плат, поставке электронных комплектующих, блоков и модулей.</p>
+                  <p class="project__description">Сайт по&nbsp;производству и&nbsp;монтажу печатных плат, поставке электронных комплектующих, блоков и&nbsp;модулей.</p>
                   <div class="project__links">
                     <a href="#">Сайт</a>
                     <a href="#">GitHub</a>
@@ -101,6 +115,7 @@
           <div class="page-footer__content">
             <div class="contacts">
               <h2 class="visually-hidden">Мои контакты</h2>
+              <p>А здесь даже можно мне написать или позвонить. :)</p>
               <div class="contacts__list">
                 <a href="mailto:i@kmartin.ru">i@kmartin.ru</a>
                 <a href="tel:+79295912777">+7 (929) 591-2-777</a>

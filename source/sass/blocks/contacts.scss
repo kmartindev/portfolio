@@ -1,0 +1,50 @@
+.contacts {
+  margin-bottom: 99px;
+  padding-top: 71px;
+}
+
+.contacts p {
+  margin: 0;
+  margin-bottom: 60px;
+
+  font-family: "PT Mono", "Courier New", monospace;
+  font-size: 21px;
+  color: $color-blanc;
+  letter-spacing: 0.35px;
+}
+
+.contacts__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__list a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  min-height: 280px;
+  padding: 20px;
+
+  font-family: "PT Mono", "Courier New", monospace;
+  font-size: 36px;
+  color: $color-blanc;
+  text-transform: uppercase;
+
+  border: 1px solid $color-blanc;
+
+  transition: $trans-default;
+
+  &:first-child {
+    margin-right: 40px;
+  }
+
+  &:hover,
+  &:focus {
+    width: 75%;
+
+    color: $color-nero;
+
+    background-color: $color-blanc;
+  }
+}

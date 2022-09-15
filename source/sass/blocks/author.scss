@@ -1,0 +1,53 @@
+.author {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 66px;
+  padding-bottom: 30px;
+
+  border-bottom: 1px solid $color-blanc;
+}
+
+.author__name p {
+  margin: 0;
+  margin-left: -6px;
+
+  font-family: "PT Mono", "Courier New", monospace;
+  font-size: 110px;
+  line-height: 120px;
+  color: $color-blanc;
+  letter-spacing: -2.75px;
+
+  text-shadow: 3px -2px $color-gamboge, 0 4px $color-pacific-blue-60, -1px -4px $color-inch-worm-60;
+}
+
+.author__contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.author__contacts ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  margin-top: auto;
+  padding: 0;
+  padding-bottom: 17px;
+
+  list-style: none;
+}
+
+.author__contacts a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: "PT Mono", "Courier New", monospace;
+  font-size: 16px;
+  color: $color-blanc;
+}
+
+.author__contacts svg {
+  margin-bottom: 13px;
+
+  fill: $color-blanc;
+}

@@ -12,10 +12,12 @@
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: "";
-
+  font-family: "PT Mono";
   font-display: swap;
-  src:
-    url("../fonts/.woff2") format("woff2"),
-    url("../fonts/.woff") format("woff");
+
+  src: local("PT Mono"),
+    url("../fonts/PTMono-Regular.woff2") format("woff2"),
+    url("../fonts/PTMono-Regular.woff") format("woff");
 }
+
+// font-family: "PT Mono", "Courier New", monospace;
