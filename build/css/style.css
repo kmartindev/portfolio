@@ -1205,7 +1205,7 @@ button,
   }
 
   .contacts p {
-    width: 460px;
+    max-width: 460px;
     margin: 0 auto;
     margin-bottom: 53px;
     font-size: 24px;
@@ -1261,12 +1261,143 @@ button,
     width: 100%;
   }
 
+  .author {
+    padding-top: 77px;
+    padding-bottom: 18px;
+  }
+
+  .author::before {
+    right: 0;
+    width: auto;
+  }
+
   .author__name p {
+    margin-bottom: 39px;
+    margin-left: 0;
     font-size: 60px;
     line-height: 60px;
+    text-align: center;
+    text-shadow: 2px -1px #e19600, 0 3px rgba(0, 150, 200, 0.6), -1px -3px rgba(175, 225, 0, 0.6);
+  }
+
+  .author__contacts {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .author__contacts ul {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+  }
+
+  .author__contacts li {
+    margin-right: 0;
   }
 
   .author__contacts svg {
     height: 40px;
+  }
+
+  .portfolio {
+    padding-top: 60px;
+  }
+
+  .portfolio__header {
+    margin-bottom: 64px;
+  }
+
+  .portfolio__header p {
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.35px;
+    text-align: center;
+  }
+
+  .projects {
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
+    row-gap: 40px;
+  }
+
+  .project::before {
+    bottom: 15px;
+  }
+
+  .project {
+    padding: 41px 19px 59px;
+  }
+
+  .project__order {
+    margin-bottom: 24px;
+    font-size: 48px;
+  }
+
+  .project__title {
+    margin-bottom: 24px;
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .project__description {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .page-footer {
+    padding-bottom: 76px;
+  }
+
+  .contacts {
+    margin-bottom: 167px;
+    padding-top: 58px;
+  }
+
+  .contacts h2 {
+    position: relative;
+    width: auto;
+    height: auto;
+    margin: 0;
+    margin-bottom: 57px;
+    padding: 0;
+    overflow: visible;
+    white-space: normal;
+    border: none;
+    clip: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
+    font-family: "PT Mono", "Courier New", monospace;
+    font-weight: normal;
+    font-size: 36px;
+    color: #d8ccbd;
+    text-align: center;
+  }
+
+  .contacts p {
+    display: none;
+  }
+
+  .contacts__list a:first-child {
+    margin-bottom: 30px;
+  }
+
+  .contacts__list a {
+    min-height: 90px;
+    padding: 10px;
+    font-size: 24px;
+    letter-spacing: -0.25px;
+  }
+
+  .copyright p {
+    font-size: 14px;
+    letter-spacing: -0.35px;
   }
 }

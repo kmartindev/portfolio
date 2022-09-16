@@ -27,6 +27,17 @@
       border-bottom: 1px solid $color-blanc;
     }
   }
+
+  @include vp-767 {
+    padding-top: 77px;
+    padding-bottom: 18px;
+
+    &::before {
+      right: 0;
+
+      width: auto;
+    }
+  }
 }
 
 .author__name p {
@@ -52,14 +63,24 @@
   }
 
   @include vp-767 {
+    margin-bottom: 39px;
+    margin-left: 0;
+
     font-size: 60px;
     line-height: 60px;
+    text-align: center;
+
+    text-shadow: 2px -1px $color-gamboge, 0 3px $color-pacific-blue-60, -1px -3px $color-inch-worm-60;
   }
 }
 
 .author__contacts {
   display: flex;
   flex-direction: column;
+
+  @include vp-767 {
+    align-items: center;
+  }
 }
 
 .author__contacts ul {
@@ -80,6 +101,13 @@
     justify-content: flex-start;
     padding-bottom: 0;
   }
+
+  @include vp-767 {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+  }
 }
 
 .author__contacts li {
@@ -89,6 +117,10 @@
     &:last-child {
       margin-right: 0;
     }
+  }
+
+  @include vp-767 {
+    margin-right: 0;
   }
 }
 
