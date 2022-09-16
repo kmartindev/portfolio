@@ -1,10 +1,19 @@
 .portfolio {
   padding-top: 151px;
   padding-bottom: 75px;
+
+  @include vp-1023 {
+    padding-top: 76px;
+    padding-bottom: 62px;
+  }
 }
 
 .portfolio__header {
   margin-bottom: 98px;
+
+  @include vp-1023 {
+    margin-bottom: 89px;
+  }
 }
 
 .portfolio__header p {
@@ -15,4 +24,10 @@
   font-size: 48px;
   line-height: 58px;
   color: $color-blanc;
+
+  @include vp-1023 {
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 0.55px;
+  }
 }

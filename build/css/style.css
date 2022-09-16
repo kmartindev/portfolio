@@ -771,7 +771,7 @@ button,
   line-height: 120px;
   color: #d8ccbd;
   letter-spacing: -2.75px;
-  text-shadow: 3px -2px #e19600, 0px 4px rgba(0, 150, 200, 0.6), -1px -4px rgba(175, 225, 0, 0.6);
+  text-shadow: 3px -2px #e19600, 0 4px rgba(0, 150, 200, 0.6), -1px -4px rgba(175, 225, 0, 0.6);
 }
 
 .author__contacts {
@@ -814,6 +814,8 @@ button,
 }
 
 .author__contacts svg {
+  width: auto;
+  height: 72px;
   margin-bottom: 13px;
   fill: #d8ccbd;
 }
@@ -923,6 +925,7 @@ button,
 
 .project__description {
   margin: 0;
+  margin-bottom: 15px;
   font-family: "PT Mono", "Courier New", monospace;
   font-size: 16px;
   line-height: 20px;
@@ -1034,11 +1037,12 @@ button,
   align-items: center;
   width: 50%;
   min-height: 280px;
-  padding: 20px;
+  padding: 15px;
   font-family: "PT Mono", "Courier New", monospace;
   font-size: 36px;
   color: #d8ccbd;
   text-transform: uppercase;
+  text-align: center;
   border: 1px solid #d8ccbd;
   -webkit-transition: 0.3s ease;
   -o-transition: 0.3s ease;
@@ -1078,7 +1082,172 @@ button,
   }
 }
 
+@media (max-width: 1199px) {
+  .container {
+    padding: 0 45px;
+  }
+
+  .author__name p {
+    font-size: 90px;
+    line-height: 90px;
+    letter-spacing: -2.5px;
+  }
+
+  .author__contacts ul {
+    padding-bottom: 9px;
+  }
+
+  .author__contacts svg {
+    height: 60px;
+  }
+
+  .projects {
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+
+  .project {
+    padding: 45px 22px 69px;
+  }
+
+  .project__description {
+    font-size: 15px;
+  }
+
+  .contacts__list a {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .author {
+    position: relative;
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
+    padding-top: 97px;
+    padding-bottom: 14px;
+    border: none;
+  }
+
+  .author::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 339px;
+    border-bottom: 1px solid #d8ccbd;
+  }
+
+  .author__name p {
+    margin-bottom: 45px;
+  }
+
+  .author__contacts ul {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    padding-bottom: 0;
+  }
+
+  .author__contacts li {
+    margin-right: 53px;
+  }
+
+  .author__contacts li:last-child {
+    margin-right: 0;
+  }
+
+  .author__contacts a {
+    font-size: 14px;
+  }
+
+  .author__contacts svg {
+    margin-bottom: 9px;
+  }
+
+  .portfolio {
+    padding-top: 76px;
+    padding-bottom: 62px;
+  }
+
+  .portfolio__header {
+    margin-bottom: 89px;
+  }
+
+  .portfolio__header p {
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 0.55px;
+  }
+
+  .projects {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project::before {
+    font-size: 14px;
+  }
+
+  .project__order {
+    font-size: 40px;
+  }
+
+  .page-footer {
+    padding-bottom: 56px;
+  }
+
+  .contacts {
+    margin-bottom: 175px;
+    padding-top: 60px;
+  }
+
+  .contacts p {
+    width: 460px;
+    margin: 0 auto;
+    margin-bottom: 53px;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: -0.25px;
+  }
+
+  .contacts__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .contacts__list a:first-child {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .contacts__list a:hover,
+  .contacts__list a:focus {
+    width: 100%;
+  }
+
+  .contacts__list a {
+    width: 100%;
+    min-height: 150px;
+  }
+}
+
 @media (max-width: 767px) {
+  .container {
+    padding: 0 15px;
+  }
+
   .modal__wrapper {
     padding: 60px 16px;
   }
@@ -1090,5 +1259,14 @@ button,
 
   .modal--fit-content .modal__content {
     width: 100%;
+  }
+
+  .author__name p {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .author__contacts svg {
+    height: 40px;
   }
 }

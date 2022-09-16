@@ -16,6 +16,14 @@
     font-family: "PT Mono", "Courier New", monospace;
     font-size: 16px;
     color: inherit;
+
+    @include vp-1023 {
+      font-size: 14px;
+    }
+  }
+
+  @include vp-1199 {
+    padding: 45px 22px 69px;
   }
 }
 
@@ -66,6 +74,10 @@
   &::before {
     content: attr(data-order) "";
   }
+
+  @include vp-1023 {
+    font-size: 40px;
+  }
 }
 
 .project__title {
@@ -80,12 +92,17 @@
 
 .project__description {
   margin: 0;
+  margin-bottom: 15px;
 
   font-family: "PT Mono", "Courier New", monospace;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.4px;
   color: inherit;
+
+  @include vp-1199 {
+    font-size: 15px;
+  }
 }
 
 .project__links {

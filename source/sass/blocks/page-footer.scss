@@ -1,3 +1,7 @@
 .page-footer {
   padding-bottom: 89px;
+
+  @include vp-1023 {
+    padding-bottom: 56px;
+  }
 }

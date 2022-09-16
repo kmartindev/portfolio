@@ -1,6 +1,11 @@
 .contacts {
   margin-bottom: 99px;
   padding-top: 71px;
+
+  @include vp-1023 {
+    margin-bottom: 175px;
+    padding-top: 60px;
+  }
 }
 
 .contacts p {
@@ -11,11 +16,28 @@
   font-size: 21px;
   color: $color-blanc;
   letter-spacing: 0.35px;
+
+  @include vp-1023 {
+    width: 460px;
+    margin: 0 auto;
+    margin-bottom: 53px;
+
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: -0.25px;
+  }
 }
 
 .contacts__list {
   display: flex;
   justify-content: space-between;
+
+  @include vp-1023 {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
 
 .contacts__list a {
@@ -24,12 +46,13 @@
   align-items: center;
   width: 50%;
   min-height: 280px;
-  padding: 20px;
+  padding: 15px;
 
   font-family: "PT Mono", "Courier New", monospace;
   font-size: 36px;
   color: $color-blanc;
   text-transform: uppercase;
+  text-align: center;
 
   border: 1px solid $color-blanc;
 
@@ -37,6 +60,11 @@
 
   &:first-child {
     margin-right: 40px;
+
+    @include vp-1023 {
+      margin-right: 0;
+      margin-bottom: 40px;
+    }
   }
 
   &:hover,
@@ -46,5 +74,18 @@
     color: $color-nero;
 
     background-color: $color-blanc;
+
+    @include vp-1023 {
+      width: 100%;
+    }
+  }
+
+  @include vp-1199 {
+    font-size: 30px;
+  }
+
+  @include vp-1023 {
+    width: 100%;
+    min-height: 150px;
   }
 }

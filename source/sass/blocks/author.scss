@@ -5,6 +5,28 @@
   padding-bottom: 30px;
 
   border-bottom: 1px solid $color-blanc;
+
+  @include vp-1023 {
+    position: relative;
+
+    grid-template-columns: auto;
+    padding-top: 97px;
+    padding-bottom: 14px;
+
+    border: none;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      width: 339px;
+
+      border-bottom: 1px solid $color-blanc;
+    }
+  }
 }
 
 .author__name p {
@@ -18,6 +40,21 @@
   letter-spacing: -2.75px;
 
   text-shadow: 3px -2px $color-gamboge, 0 4px $color-pacific-blue-60, -1px -4px $color-inch-worm-60;
+
+  @include vp-1199 {
+    font-size: 90px;
+    line-height: 90px;
+    letter-spacing: -2.5px;
+  }
+
+  @include vp-1023 {
+    margin-bottom: 45px;
+  }
+
+  @include vp-767 {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .author__contacts {
@@ -34,6 +71,25 @@
   padding-bottom: 17px;
 
   list-style: none;
+
+  @include vp-1199 {
+    padding-bottom: 9px;
+  }
+
+  @include vp-1023 {
+    justify-content: flex-start;
+    padding-bottom: 0;
+  }
+}
+
+.author__contacts li {
+  @include vp-1023 {
+    margin-right: 53px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .author__contacts a {
@@ -44,10 +100,28 @@
   font-family: "PT Mono", "Courier New", monospace;
   font-size: 16px;
   color: $color-blanc;
+
+  @include vp-1023 {
+    font-size: 14px;
+  }
 }
 
 .author__contacts svg {
+  width: auto;
+  height: 72px;
   margin-bottom: 13px;
 
   fill: $color-blanc;
+
+  @include vp-1199 {
+    height: 60px;
+  }
+
+  @include vp-1023 {
+    margin-bottom: 9px;
+  }
+
+  @include vp-767 {
+    height: 40px;
+  }
 }
